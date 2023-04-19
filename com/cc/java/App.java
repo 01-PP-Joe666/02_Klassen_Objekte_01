@@ -2,12 +2,38 @@ package com.cc.java;
 
 public class App {
     
+  
     public static void main(String[] args) {
+      
+        /* Instanziierung Klasse --> Objekt */
+        // Cat -- Referenztyp
+        // cat -- Referenzvariable
 
 
-    }
+        Cat cat1 = new Cat();
+        output("Blick von aussen: " + cat1);
+        output(cat1.tellYourAdress());
 
-   
+        output(cat1.name);
+        output(cat1.furColor);
 
+        // int --> String  | 2 --> "2"
+        output(Integer.toString(cat1.age));
+        // output(String.valueOf(2));
+        // output(Integer.toString(2));
+
+        output("-------------");
+
+        Cat cat2 = new Cat();
+        output("Blick von aussen: " + cat2);
+        output(cat2.tellYourAdress());
+            
+        }
+ 
+    public static void output(String outStr) {
+
+     System.out.println(outStr);
+        
+        }
 }
 
